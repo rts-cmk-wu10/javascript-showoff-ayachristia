@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Music Player</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	
-	<script src="/app.js" defer></script>
+	<!-- body will be the grid container  -->
+	<!-- everything inside will be grid items  -->
+	<header class="header">
+		<section class="searchBar">
+			<form class="searchForm">
+				<input type="search" class="searchform_input" name="search" placeholder="Søg efter sange, album, kunstnere og podcasts">
+
+				<button type="submit">Søg</button>
+			</form>
+		</section>
+
+		<section class="settingBar"><i class="fa-brands fa-chromecast"></i></section>
+	</header>
+
+
+	<main>
+		<section>
+			<ul id="myList" class="musicResults"></ul>
+			<span class="musicRelease"></span>
+		</section>
+	</main>
+
+
+	<nav>
+		<section class="logo">
+			<img src="img/headphones-clipart-design-illustartion-free-png.webp" alt="Logo" id="logo">
+		</section>
+		<section class="navbar">
+			<ul>
+				<li><a href="index.html">Start</a></li>
+				<li>Medlemskab</li>
+				<li>Samling</li>
+			</ul>
+		</section>
+		<section class="playLists">
+			<section id="playLists_header">
+				<div id="playList_headline">
+					<span>Playlister</span>
+				</div>
+				<p id="memberName">Member id</p>
+			</section>
+
+			<section class="playList_item">
+				<h2>Funk</h2>
+				<p id="memberName">Member id</p>
+			</section>
+
+			<section class="playList_item">
+				<h2>Træning</h2>
+				<p id="memberName">Member id</p>
+			</section>
+
+			<section class="playList_item">
+				<h2>Fest i skuret</h2>
+				<p id="memberName">Member id</p>
+			</section>
+		</section>
+	</nav>
+
+	<script src="app.js" defer></script>
 </body>
+
 </html>
